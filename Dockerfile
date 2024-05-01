@@ -1,4 +1,4 @@
-FROM mongo:7.0.8 as base
+FROM mongo:7.0.9 as base
 
 EXPOSE 27017
 
