@@ -15,7 +15,7 @@
   "dependencies": {
     "copyfiles": "^2.4.1",
     "express": "^5.0.0-beta.3",
-    "mongoose": "^8.3.2",
+    "mongoose": "^8.3.3",
     "warframe-items": "^1.1262.63",
     "winston": "^3.13.0",
     "winston-daily-rotate-file": "^5.0.0"
