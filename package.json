@@ -14,7 +14,7 @@
   "license": "GNU",
   "dependencies": {
     "copyfiles": "^2.4.1",
-    "express": "^5.0.0-beta.3",
+    "express": "^5.0.1",
     "mongoose": "^8.4.5",
     "warframe-public-export-plus": "^0.5.2",
     "warframe-riven-info": "^0.1.1",
