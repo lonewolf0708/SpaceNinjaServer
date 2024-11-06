@@ -29,8 +29,9 @@ export const gildWeaponController: RequestHandler = async (req, res) => {
     const accountId = await getAccountIdForRequest(req);
     const data: IGildWeaponRequest = getJSONfromString(String(req.body));
     data.ItemId = String(req.query.ItemId);
-    if (!modularWeaponCategory.includes(req.query.Category as WeaponTypeInternal | "Hoverboards")) {
-        throw new Error(`Unknown modular weapon Category: ${req.query.Category}`);
+    if (!modularWeaponCategory.includes(req.query.Category as WeaponTypeInternal | "Hoverboards") ||
+        req.query.Category === '__proto__' || req.query.Category === 'constructor' || req.query.Category === 'prototype') {
+        throw new Error(`Unknown or invalid modular weapon Category: ${req.query.Category}`);
     }
     data.Category = req.query.Category as WeaponTypeInternal | "Hoverboards";
 
